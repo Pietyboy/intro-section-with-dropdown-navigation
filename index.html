@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="images/logo.svg" height="100%">
+    <div class="bar">
+      <button onclick="open_menu()" class="menu_icon"><img id="menu_icon" src="images/icon-menu.svg" width="100%"></button>
+      <div id="menu" class="menu">
+          <div class="left_part">
+
+            <div class="dropdown option">
+              
+                <button onclick="drop_1()" id="feature_button" class="option dropbtn header_button">Features<img id="first_arrow" class="arrow" src="images/icon-arrow-down.svg"></button>
+
+                <div id="first_container" class="dropdown_content dropdown_left">
+
+                  <p class="drop_item"><img class="drop_img" src="images/icon-todo.svg">Todo List</p>
+                  <p class="drop_item"><img class="drop_img" src="images/icon-calendar.svg">Calander</p>
+                  <p class="drop_item"><img class="drop_img" src="images/icon-reminders.svg">Reminders</p>
+                  <p class="drop_item"><img class="drop_img" src="images/icon-planning.svg">Planning</p>
+
+                </div>
+
+            </div>
+
+            <div class="dropdown option">
+              <button onclick="drop_2()" id="company_button" class="option dropbtn header_button">Company <img id="second_arrow" class="arrow" src="images/icon-arrow-down.svg"></button>
+              <div id="second_container" class="dropdown_content dropdown_right">
+                <p class="drop_item">History</p>
+                <p class="drop_item">Our Team</p>
+                <p class="drop_item">Blog</p>
+              </div>
+            </div>
+          
+            <p class="option">Careers</p>
+            <button class="header_button option">About</button>
+          </div>
+
+          <div class="right_part">  
+            <p class="option header_button">Login</p>
+            <button id="register_button" class="option">Register</button>
+          </div>
+      </div>
+    </div>
+      
+      
+    </div>
+  </header>
+
+  <section class="container">
+
+    <div class="image_container">
+      <img src="images/image-hero-mobile.png" height='100%' width="100%">
+    </div>
+
+    <article class="main">
+      <h1>Make remote work</h1>
+      <p class="main_text">Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+      <button class="learn_button">Learn more</button>
+
+      <footer>
+        <img class="footer_item" src="images/client-databiz.svg">
+        <img class="footer_item" src="images/client-audiophile.svg">
+        <img class="footer_item" src="images/client-meet.svg">
+        <img class="footer_item" src="images/client-maker.svg">
+      </footer>
+    </article>
+    
+  </section>
+</body>
+</html>
